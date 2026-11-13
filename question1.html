@@ -1,87 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Question 1 | Exam Answers</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header><h1>Exam Answers</h1><p>Parts (b), (c), (d) and (e)</p></header>
-<nav class="site-nav" aria-label="Main navigation">
-  <a href="index.html">Home</a>
-  <a href="question1.html">Question 1</a>
-  <a href="question2.html">Question 2</a>
-  <a href="question3.html">Question 3</a>
+
+<header><h1>Question 1</h1></header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="question1.html">Question 1</a>
+    <a href="question2.html">Question 2</a>
+    <a href="question3.html">Question 3</a>
 </nav>
+
 <main>
-<section class="card"><h2>Question 1</h2><p>Parts (b), (c), (d) and (e).</p></section>
-<section class="answer">
-  <h2>1(b) — CSS Box Model</h2>
-  <p>This example shows margin, border, padding and content using nested boxes.</p>
-  <div class="output">
-    <h2>CSS Box Model</h2>
-    <div class="box-margin">margin
-      <div class="box-content">padding
-        <p>content</p>
-      </div>
+<section>
+    <h2>Q1(b): CSS Box Model</h2>
+    <div class="output">
+        <h2>CSS Box Model</h2>
+        <div class="box-margin">
+            Margin
+            <div class="box-content">
+                Padding
+                <p>Content</p>
+            </div>
+        </div>
     </div>
-  </div>
 </section>
-<section class="answer">
-  <h2>1(c) — HTML Lists</h2>
-  <div class="output">
-    <h3>Ordered List</h3><ol><li>Registration</li><li>Payment</li></ol>
-    <h3>Unordered List</h3><ul><li>Finance</li><li>ICT</li></ul>
-    <h3>Description List</h3><dl><dt><strong>HTML</strong></dt><dd>Creates web pages</dd></dl>
-  </div>
-</section>
-<section class="answer">
-  <h2>1(c) — Food for All Initiative</h2>
-  <div class="output">
-    <h1>Food for All Initiative</h1>
-    <h2>Our Mission</h2>
-    <p>Our mission is to fight food insecurity by providing food to people in need.</p>
-    <h2>Our Programmes</h2>
-    <ul><li>Food distribution</li><li>School feeding</li><li>Community farming</li></ul>
-    <a href="#donate-example">Donate Now</a>
-    <div class="image-placeholder" style="margin-top:12px">
-      <span aria-hidden="true">🖼️</span><span>Volunteers distributing food to families<br><small>Image preview placeholder for bb.jpg</small></span>
+
+<section>
+    <h2>Q1(c): HTML Lists</h2>
+    <div class="output">
+        <h3>Ordered List</h3>
+        <ol>
+            <li>Registration</li>
+            <li>Payment</li>
+        </ol>
+
+        <h3>Unordered List</h3>
+        <ul>
+            <li>Finance</li>
+            <li>ICT</li>
+        </ul>
+
+        <h3>Description List</h3>
+        <dl>
+            <dt><strong>HTML</strong></dt>
+            <dd>Creates web pages.</dd>
+        </dl>
     </div>
-  </div>
-  <p class="note">The original image file <strong>bb.jpg</strong> was not supplied, so a placeholder is shown here.</p>
 </section>
-<section class="answer">
-  <h2>1(d) — Ways of Applying CSS</h2>
-  <div class="output">
-    <h2>Ways of Applying CSS in HTML</h2>
-    <h3>1. Internal CSS</h3>
-    <p>Internal CSS uses the <code>&lt;style&gt;</code> tag inside the HTML document's head section.</p>
-    <h3>2. External CSS</h3>
-    <p>External CSS uses a separate CSS file linked to the HTML document.</p>
-    <h3>Recommendation</h3>
-    <p>External CSS is best for a large multi-page government portal.</p>
-    <h3>Justification</h3>
-    <p>It allows many web pages to share one stylesheet, ensuring consistency and making maintenance easier.</p>
-  </div>
+
+<section>
+    <h2>Q1(c): Food for All Initiative</h2>
+    <div class="output food-banner">
+        <h2>Food for All Initiative</h2>
+        <p>Our mission is to reduce hunger by providing food to people in need.</p>
+
+        <h3>Our Programmes</h3>
+        <ul>
+            <li>Food distribution</li>
+            <li>School feeding</li>
+            <li>Community farming</li>
+        </ul>
+
+        <p><a href="donate.html">Donate Now</a></p>
+        <p><em>Image: volunteers distributing food to families.</em></p>
+    </div>
 </section>
-<section class="answer">
-  <h2>1(e) — Student Registration Form</h2>
-  <div class="output">
-    <form action="#" method="get">
-      <label for="studentName">Student Name:</label>
-      <input id="studentName" type="text" name="studentName">
-      <label>Gender:</label>
-      <input id="male" type="radio" name="gender" value="Male"> <label for="male" style="display:inline">Male</label>
-      <input id="female" type="radio" name="gender" value="Female"> <label for="female" style="display:inline">Female</label>
-      <label for="password">Password:</label>
-      <input id="password" type="password" name="password">
-      <br><input type="submit" value="Register">
-    </form>
-  </div>
-  <p class="note">This is a demonstration form. It does not store or submit registration data to a server.</p>
+
+<section>
+    <h2>Q1(d): Applying CSS</h2>
+    <div class="output">
+        <h3>Internal CSS</h3>
+        <p>Internal CSS is written inside a style element in the HTML document's head.</p>
+
+        <h3>External CSS</h3>
+        <p>External CSS is written in a separate CSS file and linked to the HTML document.</p>
+
+        <h3>Recommendation</h3>
+        <p>External CSS is recommended for a large government portal because many pages can share one stylesheet. This improves consistency and makes maintenance easier.</p>
+    </div>
+</section>
+
+<section>
+    <h2>Q1(e): Student Registration Form</h2>
+    <div class="output">
+        <form class="registration-form">
+            <label for="student-name">Student Name:</label>
+            <input type="text" id="student-name" name="student-name">
+
+            <p>Gender:</p>
+            <label><input type="radio" name="gender" value="Male"> Male</label>
+            <label><input type="radio" name="gender" value="Female"> Female</label>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+
+            <br><br>
+            <input type="submit" value="Register">
+        </form>
+        <p><small>This is a demonstration form; it does not save registrations.</small></p>
+    </div>
 </section>
 </main>
-<footer>Exam Revision Website</footer>
+
+<footer><p>Web Development Practical</p></footer>
 </body>
 </html>
