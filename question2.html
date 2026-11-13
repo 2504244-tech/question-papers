@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 2 | Exam Answers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Exam Answers</h1>
+        <p>Parts (a), (b), (c) and (d)</p>
+    </header>
+    <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="question1.html">Question 1</a>
+        <a href="question2.html">Question 2</a>
+        <a href="question3.html">Question 3</a>
+    </nav>
+    <main>
+        <section class="card">
+            <h2>Question 2</h2>
+            <p>Answers for parts (a), (b), (c) and (d).</p>
+        </section>
+        <section class="answer">
+            <h2>2(a) — Internet Usage Statistics</h2>
+            <p>An HTML table displays counties, internet users in millions and percentage penetration.</p>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;Internet Usage Statistics&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;table border=&quot;1&quot;&gt;
+        &lt;caption&gt;County | Internet Users (millions) | % Penetration&lt;/caption&gt;
+        &lt;tr bgcolor=&quot;lightblue&quot;&gt;
+            &lt;th&gt;County&lt;/th&gt;
+            &lt;th&gt;Internet Users (millions)&lt;/th&gt;
+            &lt;th&gt;% Penetration&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;Nairobi&lt;/td&gt;&lt;td&gt;6.2&lt;/td&gt;&lt;td&gt;72%&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;Mombasa&lt;/td&gt;&lt;td&gt;1.8&lt;/td&gt;&lt;td&gt;55%&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;Kisumu&lt;/td&gt;&lt;td&gt;0.9&lt;/td&gt;&lt;td&gt;41%&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;Nakuru&lt;/td&gt;&lt;td&gt;1.1&lt;/td&gt;&lt;td&gt;48%&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;Eldoret&lt;/td&gt;&lt;td&gt;0.7&lt;/td&gt;&lt;td&gt;39%&lt;/td&gt;&lt;/tr&gt;
+    &lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </section>
+        <section class="answer">
+            <h2>2(b) — HTML Lists</h2>
+            <h3>Ordered list</h3>
+            <p>Steps for online registration: create an account, enter details and submit the form.</p>
+            <h3>Unordered list</h3>
+            <p>Hospital services include outpatient care, maternity services and laboratory tests.</p>
+            <h3>Description list</h3>
+            <p>HTML is used to structure web pages. CSS is used to style web pages.</p>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;HTML Lists&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h3&gt;1. Ordered List&lt;/h3&gt;
+    &lt;p&gt;Steps for online registration:&lt;/p&gt;
+    &lt;ol&gt;
+        &lt;li&gt;Create an account&lt;/li&gt;
+        &lt;li&gt;Enter details&lt;/li&gt;
+        &lt;li&gt;Submit the form&lt;/li&gt;
+    &lt;/ol&gt;
+
+    &lt;h3&gt;2. Unordered List&lt;/h3&gt;
+    &lt;p&gt;Services offered by a hospital:&lt;/p&gt;
+    &lt;ul&gt;
+        &lt;li&gt;Outpatient care&lt;/li&gt;
+        &lt;li&gt;Maternity services&lt;/li&gt;
+        &lt;li&gt;Laboratory tests&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;h3&gt;3. Description List&lt;/h3&gt;
+    &lt;p&gt;Computer terms:&lt;/p&gt;
+    &lt;dl&gt;
+        &lt;dt&gt;HTML&lt;/dt&gt;
+        &lt;dd&gt;Used to structure web pages.&lt;/dd&gt;
+        &lt;dt&gt;CSS&lt;/dt&gt;
+        &lt;dd&gt;Used to style web pages.&lt;/dd&gt;
+    &lt;/dl&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </section>
+        <section class="answer">
+            <h2>2(c) — Kenya Bank Portal: Hyperlinks</h2>
+            <h3>Absolute hyperlink</h3>
+            <p>An absolute hyperlink uses the complete web address (URL) to link to another website. For example, linking to the Central Bank of Kenya.</p>
+            <p><a href="https://www.centralbank.go.ke" target="_blank" rel="noopener noreferrer">Visit Central Bank of Kenya</a></p>
+            <p><strong>Use:</strong> To link to external websites such as regulators and partner organisations.</p>
+            <h3>Relative hyperlink</h3>
+            <p>A relative hyperlink uses a file path to link to another page within the same website.</p>
+            <p><strong>Example:</strong> <code>&lt;a href="staff.html"&gt;Open Staff Portal&lt;/a&gt;</code></p>
+            <p><strong>Use:</strong> To navigate between internal pages such as staff, loans and customer support.</p>
+            <h3>Difference</h3>
+            <p>An absolute hyperlink uses a complete URL, while a relative hyperlink uses a path based on the current page's location.</p>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;Kenya Bank Portal&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Kenya Bank Portal&lt;/h1&gt;
+    &lt;h2&gt;1. Absolute Hyperlink&lt;/h2&gt;
+    &lt;p&gt;An absolute hyperlink uses the complete web address (URL).&lt;/p&gt;
+    &lt;a href=&quot;https://www.centralbank.go.ke&quot;&gt;Visit Central Bank of Kenya&lt;/a&gt;
+    &lt;p&gt;Use: To link to external websites.&lt;/p&gt;
+
+    &lt;h2&gt;2. Relative Hyperlink&lt;/h2&gt;
+    &lt;p&gt;A relative hyperlink uses a file path to link to another page within the same website.&lt;/p&gt;
+    &lt;a href=&quot;staff.html&quot;&gt;Open Staff Portal&lt;/a&gt;
+    &lt;p&gt;Use: To navigate between internal pages.&lt;/p&gt;
+
+    &lt;h2&gt;Difference&lt;/h2&gt;
+    &lt;p&gt;An absolute hyperlink uses a complete URL, while a relative hyperlink uses a path based on the current page&#x27;s location.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </section>
+        <section class="answer">
+            <h2>2(d) — Public Health Website: Alt Text</h2>
+            <p>Alternative text describes an image for people who cannot see it or when the image does not load.</p>
+            <h3>Consequences of missing alt text</h3>
+            <ol>
+                <li><strong>Visually impaired users:</strong> Screen readers cannot describe images, making health information difficult to access.</li>
+                <li><strong>Users with slow internet:</strong> If images fail to load, users may miss important health information.</li>
+                <li><strong>Search engines:</strong> Search engines have less information to understand and index the images.</li>
+                <li><strong>Users with limited literacy:</strong> Users who rely on images to understand health instructions may struggle to understand the information.</li>
+            </ol>
+            <h3>Solution</h3>
+            <p>Add meaningful alt text, such as: “A healthcare worker educating patients about disease prevention.” This improves accessibility and understanding.</p>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;Public Health Website&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Public Health Information - Kenya&lt;/h1&gt;
+    &lt;img src=&quot;health.jpg&quot; alt=&quot;A healthcare worker educating patients about disease prevention&quot;&gt;
+    &lt;h2&gt;Consequences of Missing Alt Text&lt;/h2&gt;
+
+    &lt;h3&gt;1. Visually Impaired Users&lt;/h3&gt;
+    &lt;p&gt;Screen readers cannot describe images, making health information difficult to access.&lt;/p&gt;
+
+    &lt;h3&gt;2. Users with Slow Internet&lt;/h3&gt;
+    &lt;p&gt;If images fail to load, users may miss important health information.&lt;/p&gt;
+
+    &lt;h3&gt;3. Search Engines&lt;/h3&gt;
+    &lt;p&gt;Search engines have less information to understand and index the images.&lt;/p&gt;
+
+    &lt;h3&gt;4. Users with Limited Literacy&lt;/h3&gt;
+    &lt;p&gt;Users who rely on images to understand health instructions may struggle.&lt;/p&gt;
+
+    &lt;h2&gt;Solution&lt;/h2&gt;
+    &lt;p&gt;Adding meaningful alt text improves accessibility and understanding.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            <p class="note">Keep <code>health.jpg</code> in the correct folder if you run this example as a separate page.</p>
+        </section>
+    </main>
+    <footer>Exam Revision Website</footer>
+</body>
+</html>
