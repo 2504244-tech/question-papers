@@ -1,119 +1,212 @@
-* { box-sizing: border-box; }
-:root {
-  --burgundy: #701b39;
-  --dark-burgundy: #3e1023;
-  --cream: #fff8ed;
-  --light-cream: #f7ead8;
-  --gold: #d6a243;
-  --text: #30252a;
-  --muted: #6f6267;
+* {
+    box-sizing: border-box;
 }
+
 body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.6;
-  color: var(--text);
-  background: var(--cream);
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff8f0;
+    color: #333;
+    line-height: 1.6;
 }
+
 header {
-  background: var(--burgundy);
-  color: white;
-  padding: 28px 18px;
-  text-align: center;
+    background: #701b39;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
 }
-header h1 { margin: 0 0 6px; }
-header p { margin: 0; color: #f4dce4; }
-nav.site-nav {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 8px;
-  padding: 14px;
-  background: var(--dark-burgundy);
+
+header h1 {
+    margin: 0;
 }
-nav.site-nav a {
-  color: white;
-  text-decoration: none;
-  padding: 9px 15px;
-  border-radius: 7px;
-  font-weight: bold;
+
+nav {
+    background: #3e1023;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
 }
-nav.site-nav a:hover, nav.site-nav a:focus {
-  background: var(--gold);
-  color: var(--dark-burgundy);
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
-main { width: min(100% - 28px, 1000px); margin: 28px auto; }
-.card, .answer {
-  background: white;
-  border: 1px solid #ead9c7;
-  border-radius: 12px;
-  padding: 22px;
-  margin-bottom: 20px;
-  box-shadow: 0 3px 12px rgba(62, 16, 35, .06);
+
+nav a:hover {
+    color: #ffd27d;
 }
-.card h2, .answer > h2 { color: var(--burgundy); margin-top: 0; }
+
+main {
+    max-width: 1000px;
+    margin: 25px auto;
+    padding: 20px;
+}
+
+.welcome {
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    padding: 35px 20px;
+}
+
 .question-links {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-  gap: 16px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 25px;
 }
-.question-link {
-  display: block;
-  background: var(--light-cream);
-  color: var(--dark-burgundy);
-  border: 1px solid #e7cfb0;
-  border-radius: 10px;
-  padding: 18px;
-  text-decoration: none;
-  font-weight: bold;
+
+.question-links a {
+    background: #701b39;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    text-decoration: none;
 }
-.question-link:hover, .question-link:focus { background: var(--burgundy); color: white; }
+
+.question-links a:hover {
+    background: #3e1023;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px #00000010;
+    overflow-x: auto;
+}
+
+h2, h3 {
+    color: #701b39;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+th, td {
+    border: 1px solid #777;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background: #701b39;
+    color: white;
+}
+
+button, input[type="submit"] {
+    background: #701b39;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+footer {
+    background: #3e1023;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 35px;
+}
+
 .output {
-  border: 1px solid #ded6ce;
-  border-radius: 9px;
-  padding: 18px;
-  margin-top: 12px;
-  background: #fffdf9;
-  overflow-wrap: anywhere;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-top: 12px;
+    background: #fff;
+    overflow-x: auto;
 }
-.output h1, .output h2, .output h3 { line-height: 1.25; }
-.output table { border-collapse: collapse; width: 100%; }
-.output th, .output td { border: 1px solid #555; padding: 9px; text-align: left; }
-.output th { background: lightblue; }
-.output form label { display: block; margin: 12px 0 5px; }
-.output input { max-width: 100%; padding: 7px; }
-.output input[type="radio"] { width: auto; }
-.output button, .output input[type="submit"] {
-  margin-top: 12px; background: var(--burgundy); color: white;
-  border: 0; border-radius: 5px; padding: 9px 14px; cursor: pointer;
+
+.box-margin {
+    background: red;
+    margin: 20px;
+    padding: 20px;
+    border: 6px solid black;
 }
-.output .box-margin {
-  background: red; margin: 24px; padding: 18px; border: 6px solid black;
+
+.box-content {
+    background: grey;
+    margin: 15px;
+    padding: 20px;
+    border: 4px solid blue;
 }
-.output .box-content {
-  background: grey; margin: 14px; padding: 18px; border: 4px solid blue;
+
+.food-banner {
+    background: #e8f5e9;
+    padding: 15px;
 }
-.output .news-nav {
-  background: black; display: flex; justify-content: space-evenly;
-  flex-wrap: wrap; gap: 10px; padding: 15px;
+
+.food-banner img,
+.health-image {
+    max-width: 100%;
 }
-.output .news-nav a { color: white; text-decoration: none; }
-.output .news-nav a:hover { color: orange; }
-.output .climate-layout { display: flex; gap: 20px; }
-.output .climate-layout aside { flex: 1; background: lightgreen; padding: 15px; }
-.output .climate-layout article { flex: 2; background: lightyellow; padding: 15px; }
-.output .image-placeholder {
-  min-height: 90px; border: 1px dashed #888; padding: 12px;
-  display: flex; align-items: center; gap: 12px; background: #f7f7f7;
+
+.registration-form label {
+    display: block;
+    margin-top: 12px;
 }
-.output .broken-image { color: #555; font-size: .9rem; }
-.note { background: #fff4d9; border-left: 5px solid var(--gold); padding: 12px 15px; border-radius: 5px; }
-footer { text-align: center; padding: 22px; background: var(--dark-burgundy); color: white; margin-top: 35px; }
+
+.registration-form input {
+    margin: 5px 0;
+    padding: 8px;
+    max-width: 100%;
+}
+
+.news-nav {
+    background: black;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+.news-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.news-nav a:hover {
+    color: orange;
+}
+
+.climate-container {
+    display: flex;
+    gap: 15px;
+}
+
+.climate-container aside {
+    background: lightgreen;
+    padding: 15px;
+    flex: 1;
+}
+
+.climate-container article {
+    background: lightyellow;
+    padding: 15px;
+    flex: 3;
+}
+
 @media (max-width: 600px) {
-  header { padding: 22px 14px; }
-  main { width: min(100% - 18px, 1000px); margin: 18px auto; }
-  .card, .answer { padding: 16px; }
-  nav.site-nav a { padding: 8px 11px; }
-  .output .climate-layout { flex-direction: column; }
-  .output table { font-size: .88rem; }
+    .climate-container {
+        flex-direction: column;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    main {
+        padding: 12px;
+    }
 }
