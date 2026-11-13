@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 3 | Exam Answers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Exam Answers</h1>
+        <p>Parts (b) and (c)</p>
+    </header>
+    <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="question1.html">Question 1</a>
+        <a href="question2.html">Question 2</a>
+        <a href="question3.html">Question 3</a>
+    </nav>
+    <main>
+        <section class="card">
+            <h2>Question 3</h2>
+            <p>Answers for parts (b) and (c).</p>
+        </section>
+        <section class="answer">
+            <h2>3(b) — News Website Navigation</h2>
+            <p>The navigation bar contains Home, News, Sports and Contact links. Flexbox spaces the links evenly, and a hover effect changes the link colour to orange.</p>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;News Website&lt;/title&gt;
+    &lt;style&gt;
+        nav {
+            background-color: black;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        nav a:hover {
+            color: orange;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;nav&gt;
+        &lt;a href=&quot;home.html&quot;&gt;Home&lt;/a&gt;
+        &lt;a href=&quot;news.html&quot;&gt;News&lt;/a&gt;
+        &lt;a href=&quot;sports.html&quot;&gt;Sports&lt;/a&gt;
+        &lt;a href=&quot;contact.html&quot;&gt;Contact&lt;/a&gt;
+    &lt;/nav&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </section>
+        <section class="answer">
+            <h2>3(c) — Climate Awareness in Kenya</h2>
+            <p>This page uses Flexbox to place a quick-facts sidebar beside an article. A media query changes the layout to a column on screens 600 pixels wide or smaller.</p>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;Climate Awareness&lt;/title&gt;
+    &lt;style&gt;
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            gap: 20px;
+        }
+        aside {
+            flex: 1;
+            background: lightgreen;
+            padding: 15px;
+        }
+        article {
+            flex: 2;
+            background: lightyellow;
+            padding: 15px;
+        }
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Climate Awareness in Kenya&lt;/h1&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;aside&gt;
+            &lt;h2&gt;Quick Facts&lt;/h2&gt;
+            &lt;p&gt;Plant trees.&lt;/p&gt;
+            &lt;p&gt;Save water.&lt;/p&gt;
+            &lt;p&gt;Reduce pollution.&lt;/p&gt;
+        &lt;/aside&gt;
+        &lt;article&gt;
+            &lt;h2&gt;Climate Change&lt;/h2&gt;
+            &lt;p&gt;Climate change affects people, animals and the environment.&lt;/p&gt;
+            &lt;p&gt;We should protect forests, conserve water and reduce waste.&lt;/p&gt;
+        &lt;/article&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </section>
+    </main>
+    <footer>Exam Revision Website</footer>
+</body>
+</html>
